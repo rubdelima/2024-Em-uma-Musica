@@ -1,0 +1,61 @@
+{
+    "espresso" : {
+        "title": "Espresso",
+        "artists": ["Sabrina Carpenter"],
+        "genres": ["pop"],
+        "spotify": "2HRqTpkrJO5ggZyyK6NPWz",
+        "audio": "./assets/audios/Sabrina Carpenter - Espresso.wav",
+        "image": "./assets/images/lucas-sabrina.jpg",
+        "video": "./assets/videos/espresso_synced.mp4"
+    },
+    "descer_bc" : {
+        "title": "Descer Pra BC",
+        "artists": ["Brenno & Matheus"],
+        "genres" : ["sertanejo"],
+        "spotify": "6RzcNTnS02dnqoQMdTkQwi",
+        "audio" : "./assets/audios/Brenno & Matheus - Descer Pra BC.wav",
+        "image": null,
+        "video": "./assets/videos/descer-pra-bc_synced.mp4"
+    },
+    "not_like_us" : {
+        "title": "Not Like Us",
+        "artists": ["Kendrick Lamar"],
+        "genres": ["hip hop"],
+        "spotify": "6AI3ezQ4o3HUoP6Dhudph3",
+        "audio": "./assets/audios/Kendrick Lamar - Not Like Us.wav",
+        "image": null,
+        "video" : "./assets/videos/not-like-us_synced.mp4"
+    },
+    "chihiro" : {
+        "title": "CHIHIRO",
+        "artists": ["Billie Eilish"],
+        "genres": ["pop"],
+        "spotify" : "7BRD7x5pt8Lqa1eGYC4dzj",
+        "audio" : "./assets/audios/Billie Eilish - CHIHIRO.wav",
+        "image" : "./assets/images/billie_album.webp"
+    },
+    "birds_of_a_feather" : {
+        "title": "BIRDS OF A FEATHER",
+        "artists": ["Billie Eilish"],
+        "genres": ["pop"],
+        "spotify" : "3QaPy1KgI7nu9FJEQUgn6h",
+        "audio" : "./assets/audios/Billie Eilish - BIRDS OS A FEATHER.wav",
+        "image" : "./assets/images/billie_album.webp"
+    },
+    "the_greatest" : {
+        "title": "THE GREATEST",
+        "artists": ["Billie Eilish"],
+        "genres": ["pop"],
+        "spotify" : "6TGd66r0nlPaYm3KIoI7ET",
+        "audio" : "./assets/audios/Billie Eilish - THE GREATEST (0octv).wav",
+        "image" : "./assets/images/billie_album.webp"
+    },
+    "dancing_flames" : {
+        "title": "Dancing In The Flames",
+        "artists": ["The Weeknd"],
+        "genres": ["pop"],
+        "spotify": "7z7kvUQGwlC6iOl7vMuAr9",
+        "audio" : "./assets/audios/The Weeknd - Dancing In The Flames.wav",
+        "image" : "./assets/images/the-lvcaskdn.jpg"
+    }
+}
