@@ -55,7 +55,69 @@
         "artists": ["The Weeknd"],
         "genres": ["pop"],
         "spotify": "7z7kvUQGwlC6iOl7vMuAr9",
-        "audio" : "./assets/audios/The Weeknd - Dancing In The Flames.wav",
-        "image" : "./assets/images/the-lvcaskdn.jpg"
+        "audio" : "./assets/audios/The Weeknd - Dancing In The Flames.wav"
+    },
+    "casca" : {
+        "title": "Casca de Bala",
+        "artists": ["Thullio Milionario"],
+        "genres": ["piseiro"],
+        "spotify" :"5mJcnekfy4DEpAZ6uAHM7Y",
+        "audio" : "./assets/audios/Thulio Milionario - Casca de Bala.wav"
+    },
+    "bye" : {
+        "title": "Bye Bye Bye",
+        "artists": ["NSYNC"],
+        "genres": ["pop"],
+        "spotify": "4r8lRYnoOGdEi6YyI5OC1o",
+        "audio" : "./assets/audios/NSYNC - Bye Bye Bye.wav"
+    },
+    "die_with_a_smile" : {
+        "title": "Die With A Smile",
+        "artists": ["Lady Gaga", "Bruno Mars"],
+        "genres": ["pop"],
+        "spotify": "2plbrEY59IikOBgBGLjaoe",
+        "audio": "./assets/audios/Lady Gaga - Die With a Smile.wav"
+    },
+    "apt": {
+        "title" : "APT.",
+        "artists": ["ROSE", "Bruno Mars"],
+        "genres": ["pop"],
+        "spotify": "5vNRhkKd0yEAg8suGBpjeY",
+        "audio": "./assets/audios/Rose - APT.wav"
+    },
+    "too_sweet" : {
+        "title": "Too Sweet",
+        "artists": ["Hozier"],
+        "genres": ["pop", "indie"],
+        "spotify": "3HMY0r2BAdpasXMY8rseR0",
+        "audio": "./assets/audios/Hozier - Too Sweet.wav"
+    },
+    "one_of_the_girls" : {
+        "title": "One of The Girls",
+        "artists": ["The Weeknd"],
+        "genres": ["pop"],
+        "spotify": "7CyPwkp0oE8Ro9Dd5CUDjW",
+        "audio" : "./assets/audios/The Weeknd - One Of The Girls.wav"
+    },
+    "beautiful_things" : {
+        "title" : "Beautiful Things",
+        "artists": ["Benson Boone"],
+        "genres": ["pop", "indie"],
+        "spotify" : "6tNQ70jh4OwmPGpYy6R2o9",
+        "audio" : "./assets/audios/Benson Boone - Beautiful Things.wav"
+    },
+    "alibi": {
+        "title": "Alibi",
+        "artists": ["Sevdaliza", "Pabllo Vittar", "Yseult"],
+        "genres": ["pop"],
+        "spotify": "5496lks6V3fh1mZAB6IAap",
+        "audio" : "./assets/audios/Sevdaliza - Alibi.wav"
+    },
+    "qual_o_seu_desejo" : {
+        "title": "Qual o Seu Desejo?",
+        "artists": ["Tz da Coronel"],
+        "genres": ["trap", "hip hop"],
+        "spotify": "2HzLEPWKXcfpwfmEIUURHo",
+        "audio": "./assets/audios/Tz da Coronel - Qual é o seu desejo.wav"    
     }
 }

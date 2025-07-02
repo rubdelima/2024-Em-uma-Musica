@@ -9,6 +9,4 @@ O Resultado? Pois bem, algumas não saíram como queríamos, mas em outras tivem
 
 ### Ferramentas Utilizadas
 - [RVC-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI): Ferramenta para treinamento do Modelo de Voz e Substituição de Fala
-- [Face Swap Pro](https://huggingface.co/spaces/ovi054/face-swap-pro): Ferramenta de Troca de Rostos
-
 """

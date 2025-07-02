@@ -1,3 +1,9 @@
+# 2024 em Uma Música
+
+<p align="center">
+  <img src="./assets/images/cover.png" alt="cover" width="30%">
+</p>
+
 > "Bom, fim de ano chegou. É hora da gente olhar pra trás. E relembrar de tudo o que aconteceu. Mas como seria o ano de 20XX em uma música?"
 
 Se assim como eu você também sentiu a falta dessa frase em algum ano, bem vindo! Mas um certo grupo da classe de Criatividade Computacional se juntou e se perguntou, "e se déssemos continuidade a esse projeto, mas utilizando AI"?
@@ -8,7 +14,6 @@ O Resultado? Pois bem, algumas não saíram como queríamos, mas em outras tivem
 
 ### Ferramentas Utilizadas
 - [RVC-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI): Ferramenta para treinamento do Modelo de Voz e Substituição de Fala
-- [Face Swap Pro](https://huggingface.co/spaces/ovi054/face-swap-pro): Ferramenta de Troca de Rostos
 
 ### Como executar o Projeto?
 
@@ -20,5 +25,5 @@ O Resultado? Pois bem, algumas não saíram como queríamos, mas em outras tivem
 2. Execução do Projeto
    Após ter instalado as dependências você pode executar o projeto com:
    ```sh
-   streamlit run main.py
+   streamlit run streamlit_app.py
    ```
