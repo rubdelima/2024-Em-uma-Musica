@@ -1,7 +1,6 @@
 import streamlit as st
 import json
 from models.music import Music
-import markdown
 
 SHORT_SPOTIFY_BADGE = '''
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{track_id}?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -10,11 +9,17 @@ SHORT_SPOTIFY_BADGE = '''
 LARGE_SPOTIFY_BADGE = """
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{track_id}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 """
+
 @st.cache_data
-def load_data():
+def load_data(offline_mode:bool=False)->list[Music]:
     with open('musics.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
-    return [Music(music_id=music_id, **music_data) for music_id, music_data in data.items()]
+    musics = []
+    for music_id, music_data in data.items():
+        if music_data.get("music_link") is not None and not offline_mode:
+            music_data["music"] = music_data.get("music_link")
+        musics.append(Music(music_id=music_id, **music_data))
+    return musics
 
 def audio_container(music: Music, only_music: bool = False):
     with st.container():
@@ -26,10 +31,21 @@ def audio_container(music: Music, only_music: bool = False):
             with col:
                 st.badge(genre, color="primary")
         
-        st.markdown(
-            (LARGE_SPOTIFY_BADGE if only_music else SHORT_SPOTIFY_BADGE).format(track_id=music.spotify), 
-            unsafe_allow_html=True
-        )
+        tabs = ["Spotify"]
+        if music.video:
+            tabs.append("Vídeo")
+
+        media_tabs = st.tabs(tabs)
+        with media_tabs[0]:
+            st.markdown(
+                (LARGE_SPOTIFY_BADGE if only_music else SHORT_SPOTIFY_BADGE).format(track_id=music.spotify), 
+                unsafe_allow_html=True
+            )
+        if len(media_tabs) > 1:
+            with media_tabs[1]:
+                if music.video:
+                    st.video(music.video, loop=False)
+    
         st.audio(music.audio, autoplay=False)
 
 def music_containter(music: Music, only_music: bool = False):
@@ -59,7 +75,7 @@ def music_containter(music: Music, only_music: bool = False):
     
 def download_model():
     st.subheader("Utilize o modelo de voz!")
-    col_down1, col_down2 = st.columns(2)
+    col_down1, col_down2, col_relatory = st.columns(3)
     with col_down1:
         st.download_button(
             label="Baixar Modelo de Voz",
@@ -68,9 +84,15 @@ def download_model():
         )
     with col_down2:
         st.download_button(
-            label="Baixar Modelo de Voz (Indices)",
+            label="Baixar Índices",
             data=open("assets/models/index.index", "rb").read(),
             file_name="model.index",
+        )
+    with col_relatory:
+        st.page_link(
+            page="pages/relatorio.py",
+            label="Ver Relatório",
+            icon="📊"
         )
 
 def filter_and_sort_musics(musics: list[Music]):

@@ -6,7 +6,7 @@
         "spotify": "2HRqTpkrJO5ggZyyK6NPWz",
         "audio": "./assets/audios/Sabrina Carpenter - Espresso.wav",
         "image": "./assets/images/lucas-sabrina.jpg",
-        "video": "./assets/videos/espresso_synced.mp4"
+        "video": "./assets/videos/inutilismo_espresso_ready_alt.mp4"
     },
     "descer_bc" : {
         "title": "Descer Pra BC",
@@ -119,5 +119,47 @@
         "genres": ["trap", "hip hop"],
         "spotify": "2HzLEPWKXcfpwfmEIUURHo",
         "audio": "./assets/audios/Tz da Coronel - Qual é o seu desejo.wav"    
+    },
+    "forever_young" : {
+        "title" : "Forever Young",
+        "artists": ["Alphaville"],
+        "genres": ["pop", "80s"],
+        "spotify": "4S1VYqwfkLit9mKVY3MXoo",
+        "audio": "./assets/audios/Alphaville - Forever Young.wav"
+    },
+    "end_of_beginnings" : {
+        "title": "End of Beginning",
+        "artists": ["Djo"],
+        "genres": ["pop"],
+        "spotify": "3qhlB30KknSejmIvZZLjOD",
+        "audio": "./assets/audios/Djo - End of Beginning.wav"
+    },
+    "please" : {
+        "title" : "Please Please Please",
+        "artists" : ["Sabrina Carpenter"],
+        "genres": ["pop"],
+        "spotify": "2tHwzyyOLoWSFqYNjeVMzj",
+        "audio": "./assets/audios/Sabrina Carpenter - Please Please Please.wav"
+    },
+    "taste" : {
+        "title": "Taste",
+        "artists": ["Sabrina Carpenter"],
+        "genres": ["pop"],
+        "spotify": "5G2f63n7IPVPPjfNIGih7Q",
+        "audio": "./assets/audios/Sabrina Carpenter - Taste.wav"
+    },
+    "fortnight" : {
+        "title": "Fortnight",
+        "artists": ["Taylor Swift", "Post Malone"],
+        "genres": ["pop"],
+        "spotify": "2OzhQlSqBEmt7hmkYxfT6m",
+        "audio": "./assets/audios/Taylor Swift - Fortnight.wav"
+    },
+    "lose_control" : {
+        "title": "Lose Control",
+        "artists": ["Teddy Swims"],
+        "genres": ["indie"],
+        "spotify": "6usohdchdzW9oML7VC4Uhk",
+        "audio": "./assets/audios/Teddy Swims - Lose Control.wav"
     }
 }

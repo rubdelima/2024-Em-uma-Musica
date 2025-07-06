@@ -10,7 +10,6 @@ from app.text import main_text
 ONLY_MUSIC = True
 
 st.set_page_config(page_title="2024 em Uma Música", page_icon=":musical_note:", layout="centered")
-load_custom_font()
 
 def main():
     musics = load_data()
