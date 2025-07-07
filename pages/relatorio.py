@@ -7,6 +7,16 @@ from app.text import (
     music_generation_p3, music_generation_p3_items, music_generation_p4
 )
 
+from app.video_text import (
+    main_text,
+    first_approach,
+    second_approach,
+    third_approach,
+    generated_videos,
+    tries_text,
+    generated_tries,
+)
+
 st.set_page_config(page_title="Relatório", page_icon="📊")
 
 def display_audio_items(items):
@@ -37,5 +47,25 @@ st.markdown(music_generation_p3)
 display_audio_items(music_generation_p3_items)
 st.markdown(music_generation_p4)
 
-# Ponham aqui a parte de geração de vídeos
-    
+
+# 2 Geração de vídeos a partir das músicas geradas
+st.title("3 Geração de Vídeos")
+st.markdown(main_text)
+st.markdown(first_approach)
+st.markdown(second_approach)
+st.markdown(third_approach)
+
+for video in generated_videos:
+    st.markdown(f"### {video['title']}")
+    st.caption(video["tag"])
+    st.video(video["video"])
+    st.markdown("---") 
+
+st.markdown(tries_text)
+st.markdown("---") 
+
+for video in generated_tries:
+    st.markdown(f"##### {video['title']}")
+    st.caption(video["tag"])
+    st.video(video["video"])
+    st.markdown("---") 
