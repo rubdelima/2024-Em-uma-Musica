@@ -18,7 +18,7 @@ Nesta primeira tentativa, o vídeo foi gerado unicamente a partir de uma descri�
 second_approach = """
 **Segunda abordagem: fornecimento de modelo e fundo gerado**
 
-Na segunda tentativa, passamos a fornecer tanto o modelo visual do personagem quanto um fundo gerado artificialmente, buscando compor cenas mais próximas de um videoclipe, tendo como planejamento uma sincronização labial em uma fase posterior. Apesar da melhora visual em relação à primeira abordagem, os movimentos do personagem se tornaram errádicos e podia se notar uma inconsistência de movimentos e expressões faciais no personagem, o que dificultou expressivamente a tentativa de utilização dos vídeos gerados para sincronização labiail.
+Na segunda tentativa, passamos a fornecer tanto o modelo visual do personagem quanto um fundo gerado artificialmente, buscando compor cenas mais próximas de um videoclipe, tendo como planejamento uma sincronização labial em uma fase posterior. Apesar da melhora visual em relação à primeira abordagem, os movimentos do personagem se tornaram errádicos e podia se notar uma inconsistência de movimentos e expressões faciais do personagem, o que dificultou expressivamente a tentativa de utilização dos vídeos gerados para sincronização labial.
 """
 
 third_approach = """
@@ -56,7 +56,7 @@ Apesar de conseguirmos bons resultados, também houveram gerações que, por fat
 
 generated_tries = [
     {
-        "title": "Exemplo onde vocais em camadas afetaram a habilidade de lip sync da ferramenta",
+        "title": "Exemplo onde vocais em camadas afetaram a habilidade de sincronização labial da ferramenta",
         "tag": "Million Dollar Baby, Tommy Richman",
         "video": "./assets/videos/tommy-richman_synced.mp4",
     },
@@ -66,7 +66,7 @@ generated_tries = [
         "video": "./assets/videos/cruel-summer_synced.mp4",
     },
         {
-        "title": "Exemplo onde vocais, apesar de os vocais terem sido altamente modificados durante a transformação da música, a sincronização labial se mostrou eficiente",
+        "title": "Exemplo onde vocais, apesar de terem sido altamente modificados durante a transformação da música, foram utilizados de forma eficiente para a sincronização labial",
         "tag": "To bem, Jovem Dionisio",
         "video": "./assets/videos/to-bem_synced.mp4",
     }

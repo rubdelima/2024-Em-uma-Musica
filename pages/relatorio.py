@@ -62,6 +62,7 @@ for video in generated_videos:
     st.markdown("---") 
 
 st.markdown(tries_text)
+st.markdown("---") 
 
 for video in generated_tries:
     st.markdown(f"##### {video['title']}")
