@@ -15,6 +15,15 @@ O Resultado? Pois bem, algumas não saíram como queríamos, mas em outras tivem
 
 # Relatory Text
 
+introduction_text = """ 
+## 1. Introdução
+Para o projeto autoral, começamos com uma ideia um pouco ambiciosa: compilar em um medley as músicas mais populares/marcantes de um determinado ano, com algumas mudanças e mixes nos estilos musicais delas, além da geração de um trecho de vídeo para cada música que iria compor o medley para formar um clipe final.
+
+Fazer uma pipeline automatizada para tudo isso se mostrou desafiador, então separamos em partes diferentes e diminuímos parte do escopo para ficar mais realista. Levantamos as ferramentas que poderíamos utilizar para gerar a melodia, sobrepor o vocal, gerar os trechos de vídeos e imagens para as capas.
+
+Nos apropriamos das ferramentas, realizamos os primeiros testes, entendemos suas limitações — algumas são limitações do estado da arte, e outras podem se dar aos métodos utilizados. Ainda assim, obtivemos alguns resultados satisfatórios, principalmente em músicas com características específicas, como demonstraremos a seguir.
+"""
+
 music_generation_p1 = """
 ## 2.1 Geração/Alteração de Voz
 
