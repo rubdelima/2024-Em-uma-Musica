@@ -19,6 +19,8 @@ def display_audio_items(items):
 
 st.title("Relatório de Grupo 11 - 2024 em Uma Música")
 # Ponham aqui a Introdução
+# 1 Intro
+st.markdown(introduction_text)
 
 # 2 Geração/Alteração de Voz
 st.title("2 Geração de Músicas")
