@@ -1,5 +1,17 @@
 [theme]
-primaryColor = "#FFC400" 
+primaryColor = "#FFAE00FF" 
 backgroundColor = "#2A2A2A" 
 secondaryBackgroundColor = "#3A3A3A" 
 textColor = "#FFFFFF"
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+runOnSave = false
+
+[client]
+toolbarMode = "minimal"
+
+[logger]
+level = "info"

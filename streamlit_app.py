@@ -1,5 +1,5 @@
 import streamlit as st
-
+import dotenv
 from app.utils import (
     load_data, music_containter, download_model,
     filter_and_sort_musics, load_custom_font
@@ -8,6 +8,7 @@ from app.utils import (
 from app.text import main_text
 
 ONLY_MUSIC = True
+ONLINE_MODE = dotenv.get_key(".env", "ONLINE_MODE") == "True"
 
 st.set_page_config(page_title="2024 em Uma Música", page_icon=":musical_note:", layout="centered")
 
@@ -29,4 +30,5 @@ def main():
         music_containter(music, ONLY_MUSIC)
 
 if __name__ == "__main__":
+    print(f"Running in {'online' if ONLINE_MODE else 'offline'} mode")
     main()

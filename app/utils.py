@@ -1,6 +1,7 @@
 import streamlit as st
 import json
 from models.music import Music
+import dotenv
 
 SHORT_SPOTIFY_BADGE = '''
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{track_id}?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -10,14 +11,19 @@ LARGE_SPOTIFY_BADGE = """
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/{track_id}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 """
 
+RAW_GITHUB_URL = dotenv.get_key(".env", "RAW_GITHUB_URL")
+ONLINE_MODE = dotenv.get_key(".env", "ONLINE_MODE") == "True"
+
 @st.cache_data
-def load_data(offline_mode:bool=False)->list[Music]:
+def load_data()->list[Music]:
     with open('musics.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
     musics = []
     for music_id, music_data in data.items():
-        if music_data.get("music_link") is not None and not offline_mode:
-            music_data["music"] = music_data.get("music_link")
+        if ONLINE_MODE:
+            music_data["music"] = f"{RAW_GITHUB_URL}/audios/{music_data['audio'].split('/')[-1].replace(' ', '%20')}"
+            if music_data.get("video"):
+                music_data["video"] = f"{RAW_GITHUB_URL}/videos/{music_data['video'].split('/')[-1].replace(' ', '%20')}"
         musics.append(Music(music_id=music_id, **music_data))
     return musics
 
@@ -45,7 +51,7 @@ def audio_container(music: Music, only_music: bool = False):
             with media_tabs[1]:
                 if music.video:
                     st.video(music.video, loop=False)
-    
+
         st.audio(music.audio, autoplay=False)
 
 def music_containter(music: Music, only_music: bool = False):

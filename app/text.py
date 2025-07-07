@@ -11,12 +11,16 @@ O Resultado? Pois bem, algumas não saíram como queríamos, mas em outras tivem
 
 ### Ferramentas Utilizadas
 - [RVC-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI): Ferramenta para treinamento do Modelo de Voz e Substituição de Fala
+- [Sora](https://sora.chatgpt.com): Ferramenta para criação e modificação do modelo/partes do cenário.
+- [Vocal Remover](https://vocalremover.org/): Ferramenta para isolamento das faixas vocais das músicas.
+- [Hedra](https://hedra.com/): Ferramenta para geração de vídeo sincronizado com os vocais das músicas.
+
 """
 
 # Relatory Text
 
 introduction_text = """ 
-## 1. Introdução
+# 1. Introdução
 Para o projeto autoral, começamos com uma ideia um pouco ambiciosa: compilar em um medley as músicas mais populares/marcantes de um determinado ano, com algumas mudanças e mixes nos estilos musicais delas, além da geração de um trecho de vídeo para cada música que iria compor o medley para formar um clipe final.
 
 Fazer uma pipeline automatizada para tudo isso se mostrou desafiador, então separamos em partes diferentes e diminuímos parte do escopo para ficar mais realista. Levantamos as ferramentas que poderíamos utilizar para gerar a melodia, sobrepor o vocal, gerar os trechos de vídeos e imagens para as capas.

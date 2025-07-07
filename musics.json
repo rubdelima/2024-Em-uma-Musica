@@ -164,5 +164,13 @@
         "genres": ["indie"],
         "spotify": "6usohdchdzW9oML7VC4Uhk",
         "audio": "./assets/audios/Teddy Swims - Lose Control.wav"
+    },
+    "to_bem" : {
+        "title": "to bem",
+        "artists": ["Jovem Dionísio"],
+        "genres": ["indie", "brazilian"],
+        "spotify": "4n7GVLsN4FBLyKhi0BySUq",
+        "audio": "./assets/audios/Jovem Dionisio - to bem.wav",
+        "video" : "./assets/videos/to-bem_synced.mp4"
     }
 }
