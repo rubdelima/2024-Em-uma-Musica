@@ -1,6 +1,7 @@
 import streamlit as st
 
 from app.text import (
+    introduction_text,
     music_generation_p1, music_generation_p1_items,
     music_generation_p2, music_generation_p2_items,
     music_generation_p3, music_generation_p3_items, music_generation_p4
