@@ -90,6 +90,7 @@
         "artists": ["Hozier"],
         "genres": ["pop", "indie"],
         "spotify": "3HMY0r2BAdpasXMY8rseR0",
+        "video": "./assets/videos/too-sweet_synced.mp4",
         "audio": "./assets/audios/Hozier - Too Sweet.wav"
     },
     "one_of_the_girls" : {
@@ -104,6 +105,7 @@
         "artists": ["Benson Boone"],
         "genres": ["pop", "indie"],
         "spotify" : "6tNQ70jh4OwmPGpYy6R2o9",
+        "video": "./assets/videos/beautiful-things_synced.mp4",
         "audio" : "./assets/audios/Benson Boone - Beautiful Things.wav"
     },
     "alibi": {
@@ -125,6 +127,7 @@
         "artists": ["Alphaville"],
         "genres": ["pop", "80s"],
         "spotify": "4S1VYqwfkLit9mKVY3MXoo",
+        "video": "./assets/videos/forever-young_synced.mp4",
         "audio": "./assets/audios/Alphaville - Forever Young.wav"
     },
     "end_of_beginnings" : {
